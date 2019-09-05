@@ -1,10 +1,13 @@
 package jp.ac.hal.sample;
 
-import jp.ac.hal.MyClass;
-
 public class Sample {
+
+//	フィールドはprivate!!
+	public int id;
+	private int name;
+
+//	必要なメソッドのみpublic!!
 	void a() {
-		MyClass m = new MyClass();
-		m.id = 100;
+		this.name = 1;
 	}
 }
