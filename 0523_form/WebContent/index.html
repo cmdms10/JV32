@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="MyServlet" method="get">
+		ID:<input type="text" name="id" /><br>
+		Password:<input type="password" name="password" /><br>
+		Comment:<textarea name="comment"></textarea><br>
+		<!-- textareaの注意事項は、     ↑ここに空白や、改行を入れないこと。
+			 もし入れるとその空白や改行が初期値として設定されてしまう -->
+
+		<label>
+			<input type="radio" name="type" value="a" />A
+		</label>
+		<label>
+			<input type="radio" name="type" value="b" />B
+		</label>
+		<br>
+
+		<label>
+			<input type="checkbox" name="check" value="check-a" />A
+		</label>
+		<label>
+			<input type="checkbox" name="check" value="check-b" />B
+		</label>
+		<label>
+			<input type="checkbox" name="check" value="check-c" />C
+		</label>
+		<br>
+
+		<select name="select">
+			<option value="select-a">A</option>
+			<option value="select-b">B</option>
+			<option value="select-c">C</option>
+		</select>
+
+		<input type="submit" />
+	</form>
+</body>
+</html>
